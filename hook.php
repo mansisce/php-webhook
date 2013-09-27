@@ -13,6 +13,9 @@ if (file_exists('key.php'))
         _exec('pwd');
         _exec('git pull');
         _exec('git submodule update');
+        _exec('cd ./protected');        
+        _exec('yiic migrate');                
+        _exec('rm -r ./assests');        
     }
 }
 
